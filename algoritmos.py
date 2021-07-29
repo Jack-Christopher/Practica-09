@@ -16,7 +16,7 @@ def dijkstra(n_vertices, inicio, graph):
     dist = [sys.maxsize] * n_vertices
     dist[inicio] = 0
     visited_elements = [False] * n_vertices
-    for cout in range(n_vertices):
+    for k in range(n_vertices):
         u = distanciaMinima(n_vertices, dist, visited_elements)
         visited_elements[u] = True
         for v in range(n_vertices):
